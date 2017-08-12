@@ -27,20 +27,20 @@
     난이도: '',
     키워드: ''
   },
-    {
-      미션코드: 'ms_pc2',
-      name: 'Minerva Hooper',
-      salary: '$23,789',
-      country: 'Curaçao',
-      city: 'Sinaai-Waas'
-    },
-    {
-      미션코드: 'ms_pc3',
-      name: 'Sage Rodriguez',
-      salary: '$56,142',
-      country: 'Netherlands',
-      city: 'Baileux'
-    }]
+  {
+    미션코드: 'ms_pc2',
+    name: 'Minerva Hooper',
+    salary: '$23,789',
+    country: 'Curaçao',
+    city: 'Sinaai-Waas'
+  },
+  {
+    미션코드: 'ms_pc3',
+    name: 'Sage Rodriguez',
+    salary: '$56,142',
+    country: 'Netherlands',
+    city: 'Baileux'
+  }]
 
   export default {
     components: {
@@ -60,4 +60,3 @@
 <style>
 
 </style>
-

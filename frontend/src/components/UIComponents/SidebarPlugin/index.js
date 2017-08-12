@@ -4,39 +4,24 @@ const SidebarStore = {
   showSidebar: false,
   sidebarLinks: [
     {
-      name: 'Dashboard',
+      name: '미션 승인',
       icon: 'ti-panel',
-      path: '/admin/overview'
+      path: '/admin/confirm'
     },
     {
-      name: 'User Profile',
+      name: '사용자 관리',
       icon: 'ti-user',
-      path: '/admin/stats'
+      path: '/admin/users'
     },
     {
-      name: 'Table List',
+      name: '미션 등록',
       icon: 'ti-view-list-alt',
-      path: '/admin/table-list'
+      path: '/admin/register-mission'
     },
     {
-      name: 'Typography',
-      icon: 'ti-text',
-      path: '/admin/typography'
-    },
-    {
-      name: 'Icons',
+      name: '테마 등록',
       icon: 'ti-pencil-alt2',
-      path: '/admin/icons'
-    },
-    {
-      name: 'Maps',
-      icon: 'ti-map',
-      path: '/admin/maps'
-    },
-    {
-      name: 'Notifications',
-      icon: 'ti-bell',
-      path: '/admin/notifications'
+      path: '/admin/register-theme'
     }
   ],
   displaySidebar (value) {

@@ -28,6 +28,7 @@ Vue.use(SideBar)
 const router = new VueRouter({
   routes, // short for routes: routes
   linkActiveClass: 'active'
+  // mode: 'history'
 })
 
 // global library setup

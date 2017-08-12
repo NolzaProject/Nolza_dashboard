@@ -3,59 +3,41 @@ import DashboardLayout from '../components/Dashboard/Layout/DashboardLayout.vue'
 import NotFound from '../components/GeneralViews/NotFoundPage.vue'
 
 // Admin pages
-import Overview from 'src/components/Dashboard/Views/Overview.vue'
-import UserProfile from 'src/components/Dashboard/Views/UserProfile.vue'
-import Notifications from 'src/components/Dashboard/Views/Notifications.vue'
-import Icons from 'src/components/Dashboard/Views/Icons.vue'
-import Maps from 'src/components/Dashboard/Views/Maps.vue'
-import Typography from 'src/components/Dashboard/Views/Typography.vue'
-import TableList from 'src/components/Dashboard/Views/TableList.vue'
+import Confirm from '../components/Dashboard/Views/Confirm.vue'
+import UserProfile from '../components/Dashboard/Views/UserProfile.vue'
+import RegisterMission from '../components/Dashboard/Views/RegisterMission.vue'
+import RegisterTheme from '../components/Dashboard/Views/RegisterTheme.vue'
 
 const routes = [
   {
     path: '/',
     component: DashboardLayout,
-    redirect: '/admin/overview'
+    redirect: '/admin/confirm'
   },
   {
     path: '/admin',
     component: DashboardLayout,
-    redirect: '/admin/stats',
+    redirect: '/admin/users',
     children: [
       {
-        path: 'overview',
-        name: 'overview',
-        component: Overview
+        path: 'confirm',
+        name: 'confirm',
+        component: Confirm
       },
       {
-        path: 'stats',
-        name: 'stats',
+        path: 'users',
+        name: 'users',
         component: UserProfile
       },
       {
-        path: 'notifications',
-        name: 'notifications',
-        component: Notifications
+        path: 'register-mission',
+        name: 'register-mission',
+        component: RegisterMission
       },
       {
-        path: 'icons',
-        name: 'icons',
-        component: Icons
-      },
-      {
-        path: 'maps',
-        name: 'maps',
-        component: Maps
-      },
-      {
-        path: 'typography',
-        name: 'typography',
-        component: Typography
-      },
-      {
-        path: 'table-list',
-        name: 'table-list',
-        component: TableList
+        path: 'register-theme',
+        name: 'register-theme',
+        component: RegisterTheme
       }
     ]
   },

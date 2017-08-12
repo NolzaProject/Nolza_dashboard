@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Overview from 'src/components/Dashboard/Views/Overview.vue'
+import Overview from 'src/components/Dashboard/Views/Confirm.vue'
 import Chartist from 'chartist'
 
 function getRenderedComponent (Component, propsData) {
@@ -15,7 +15,7 @@ function getRenderedComponent (Component, propsData) {
   return mount(Component, propsData)
 }
 
-describe('Overview.vue', () => {
+describe('Confirm.vue', () => {
   it('should contain 4 stats cards and 1 charts card', () => {
     var vm = getRenderedComponent(Overview);
     var statsCards = vm.$children.filter((child)=>child.$options.name==='stats-card').length;

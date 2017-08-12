@@ -2,9 +2,13 @@
   <div class="row">
     <div class="col-md-12">
       <div class="card">
-        <paper-table :data="table.data" :columns="table.columns">
+        <paper-table :title="undefineTable.title" :data="undefineTable.data" :columns="undefineTable.columns"> </paper-table>
+      </div>
+    </div>
 
-        </paper-table>
+    <div class="col-md-12">
+      <div class="card">
+        <paper-table :title="defineTable.title" :data="defineTable.data" :columns="defineTable.columns"> </paper-table>
       </div>
     </div>
   </div>
@@ -27,20 +31,20 @@
     난이도: '',
     키워드: ''
   },
-    {
-      미션코드: 'ms_pc2',
-      name: 'Minerva Hooper',
-      salary: '$23,789',
-      country: 'Curaçao',
-      city: 'Sinaai-Waas'
-    },
-    {
-      미션코드: 'ms_pc3',
-      name: 'Sage Rodriguez',
-      salary: '$56,142',
-      country: 'Netherlands',
-      city: 'Baileux'
-    }]
+  {
+    미션코드: 'ms_pc2',
+    name: 'Minerva Hooper',
+    salary: '$23,789',
+    country: 'Curaçao',
+    city: 'Sinaai-Waas'
+  },
+  {
+    미션코드: 'ms_pc3',
+    name: 'Sage Rodriguez',
+    salary: '$56,142',
+    country: 'Netherlands',
+    city: 'Baileux'
+  }]
 
   export default {
     components: {
@@ -48,7 +52,13 @@
     },
     data () {
       return {
-        table: {
+        undefineTable: {
+          title: '미승인 미션',
+          columns: [...tableColumns],
+          data: [...tableData]
+        },
+        defineTable: {
+          title: '승인된 미션',
           columns: [...tableColumns],
           data: [...tableData]
         }
@@ -60,4 +70,3 @@
 <style>
 
 </style>
-

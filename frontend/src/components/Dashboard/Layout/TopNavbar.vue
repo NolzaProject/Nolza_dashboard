@@ -10,31 +10,31 @@
         </button>
         <a class="navbar-brand">{{routeName}}</a>
       </div>
-      <div class="navbar-right-menu">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="open">
-            <a href="#" class="dropdown-toggle btn-magnify" data-toggle="dropdown">
-              <i class="ti-panel"></i>
-              <p>Stats</p>
-            </a>
-          </li>
-             <drop-down title="5 Notifications" icon="ti-bell">
-               <li><a href="#">Notification 1</a></li>
-               <li><a href="#">Notification 2</a></li>
-               <li><a href="#">Notification 3</a></li>
-               <li><a href="#">Notification 4</a></li>
-               <li><a href="#">Another notification</a></li>
-             </drop-down>
-          <li>
-            <a href="#" class="btn-rotate">
-              <i class="ti-settings"></i>
-              <p>
-                Settings
-              </p>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <!--<div class="navbar-right-menu">-->
+        <!--<ul class="nav navbar-nav navbar-right">-->
+          <!--<li class="open">-->
+            <!--<a href="#" class="dropdown-toggle btn-magnify" data-toggle="dropdown">-->
+              <!--<i class="ti-panel"></i>-->
+              <!--<p>Stats</p>-->
+            <!--</a>-->
+          <!--</li>-->
+             <!--<drop-down title="5 Notifications" icon="ti-bell">-->
+               <!--<li><a href="#">Notification 1</a></li>-->
+               <!--<li><a href="#">Notification 2</a></li>-->
+               <!--<li><a href="#">Notification 3</a></li>-->
+               <!--<li><a href="#">Notification 4</a></li>-->
+               <!--<li><a href="#">Another notification</a></li>-->
+             <!--</drop-down>-->
+          <!--<li>-->
+            <!--<a href="#" class="btn-rotate">-->
+              <!--<i class="ti-settings"></i>-->
+              <!--<p>-->
+                <!--Settings-->
+              <!--</p>-->
+            <!--</a>-->
+          <!--</li>-->
+        <!--</ul>-->
+      <!--</div>-->
     </div>
   </nav>
 </template>
@@ -42,8 +42,20 @@
   export default {
     computed: {
       routeName () {
-        const {name} = this.$route
-        return this.capitalizeFirstLetter(name)
+        let {name} = this.$route
+        if (name === 'confirm') {
+          name = '미션 승인'
+        }
+        else if (name === 'users') {
+          name = '사용자 관리'
+        }
+        else if (name === 'register-mission') {
+          name = '미션 등록'
+        }
+        else if (name === 'register-theme') {
+          name = '테마 등록'
+        }
+        return name
       }
     },
     data () {
