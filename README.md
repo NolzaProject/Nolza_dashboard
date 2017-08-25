@@ -1,5 +1,7 @@
 # Nolza_dashboard  
 
+<img src="./source/Nolza_icon.PNG" style="width=10%; height=auto; text-align:center;">
+
 ### Nolza 서비스 소개  
 
 **올림픽 관람 외의 남는 시간들을 의미있게 보낼 수 있도록, 짧은 호흡이지만 한국문화를 경험할 수 있는 컨텐츠를 제공하여 올림픽의 감동이외에도 한국에서의 특별한 경험을 선사하고자 한다.**  
