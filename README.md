@@ -1,7 +1,7 @@
 # Nolza_dashboard  
 
 <div style="width=10%; height=auto; text-align:center;">
-![Nolza icon](/source/Nolza_icon.PNG)
+![Nolza icon](source/Nolza_icon.png)  
 </div>
 
 ### Nolza 서비스 소개  
